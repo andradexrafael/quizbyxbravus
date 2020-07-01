@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="bg-gray-result">
+    <img class="logo-size" src="img/gama-logo-main-01.png"/>
+    <h1 class="main-title">Quem é você na <br> música flores do Vitão?</h1>
+    <img id="photo-result" src="#" />
+    <div class="bg-pink-result">
+      <h2 class="result-style"></h2>
+      <h3 class="description-style"></h3>
+    </div>
+    <p class="share">print e compartilhe!</p>
+    <p class="site-style">www.geracaoquizz.com</p>
+  </div>
+
+  <script>
+    const answers = JSON.parse(localStorage.getItem('@GamaQuiz:quiz-answers'));
+    const options = JSON.parse(localStorage.getItem('@GamaQuiz:quiz-who-you-are'));
+    const key = answers['answer-1']
+
+    const whoYouAre = options[key];
+
+
+    document.getElementById('photo-result').src = whoYouAre.img;
+    document.querySelector('h2').innerText = whoYouAre.result;
+    document.querySelector('h3').innerText = whoYouAre.desc;
+
+  </script>
+</body>
+</html>
