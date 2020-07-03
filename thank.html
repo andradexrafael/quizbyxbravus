@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="IMG/favicon.ico" />
   <title>Geração Quizz - Resultado do Quiz!</title>
   <!-- Hotjar Tracking Code for www.geracaoquizz.com -->
   <script>
@@ -23,7 +26,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -42,6 +45,22 @@
 </head>
 
 <body>
+  <div id="retention-modal" class="modal-container hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button type="button" id="close-button">&times;</button>
+      <form class="" method="POST" action="https://smtl.gama.academy/leads/bfeebc05-b7e1-11ea-8228-89cff86db9a0">
+        <h3>Quer receber um novo Quizz?</h3>
+
+        <input id="email" name="email" type="email" placeholder="Digite aqui o seu e-mail."
+          title="Digite um email válido" required />
+        <input id="name" name="name" type="hidden" value="usuariomodal" required />
+        <input type="submit" value="Enviar" />
+        <h6>Nós detestamos spam. Você pode cancelar sua assinatura a qualquer momento.</h6>
+        <input name="redirectTo" type="hidden" value="http://127.0.0.1:5500/quiz.html" />
+      </form>
+    </div>
+  </div>
   <div class="bg-gray-result">
     <img class="logo-size" src="img/gama-logo-main-01.png" />
     <h1 class="main-title">Quem é você na <br> música flores do Vitão?</h1>

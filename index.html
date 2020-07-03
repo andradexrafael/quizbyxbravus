@@ -8,7 +8,12 @@
   <!-- <meta http-equiv="refresh" content="5; url=/thank.html"> -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="IMG/favicon.ico" />
+
   <title>Geração Quizz - Quem é você na música flores do Vitão?</title>
+  <script id='pixel-script-poptin' src='https://cdn.popt.in/pixel.js?id=53ceec963cddf' async='true'></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171467826-1"></script>
   <script>
@@ -49,179 +54,92 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=271662433923803&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
-
-
 </head>
 
 <body>
-  <div id="wrap">
-    <img class="logo-size" src="img/gama-logo-main-01.png" alt="Logo da Geração Quizz" title="Geração Quizz">
-    <div class="quiz-container-1">
-      <h1 class="main-title">Quem é você na música flores do Vitão?</h1>
-      <div class="">
-        <h3 class="title-answer">
-          <span>
-            1.
-          </span>
-          Como está equilibrando os contatinhos na quarentena?
-        </h3>
-      </div>
-      <div class="quiz-wrap">
-        <button data-answer="answer-1" class="quiz-item" data-value="1">
-          Não ta facil :/ Zerei a Netflix e ja to indo pro Amazon Prime
-        </button>
-        <button data-answer="answer-1" class="quiz-item" data-value="2">
-          Fazendo malabarismo. Solteira sim, sozinha nunca.
-        </button>
-        <button data-answer="answer-1" class="quiz-item down" data-value="3">
-          Daqueeele jeito, respondo dia sim dia não pra deixar elx espertx
-        </button>
-        <button data-answer="answer-1" class="quiz-item down" data-value="4">
-          Com ele &lt;3 Não sei o que seria da minha quarentena sem o crush
-        </button>
-      </div>
-    </div>
+  <div id="retention-modal" class="modal-container hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button type="button" id="close-button">&times;</button>
+      <form class="" method="POST" action="https://smtl.gama.academy/leads/bfeebc05-b7e1-11ea-8228-89cff86db9a0">
+        <h3>Quer receber um novo Quizz?</h3>
 
-    <div class=" quiz-container-2 hidden">
-      <h3 class="title-answer">
-        <span>
-          2.
-        </span>
-        O seu Vitão é…
-      </h3>
-      <div class="quiz-wrap">
-        <button data-answer="answer-2" class="quiz-item" data-value="1">
-          Ta foda - só pra saber, pq vc foi embora??
-        </button>
-        <button data-answer="answer-2" class="quiz-item" data-value="2">
-          Embrasa - corpo caliente
-        </button>
-        <button data-answer="answer-2" class="quiz-item down" data-value="3">
-          Complicado - se tem sentimento, por que ce tá complicando?
-        </button>
-        <button data-answer="answer-2" class="quiz-item down" data-value="4">
-          Romeu e Julieta - fofooo lindo apaixonante #soulmate
-        </button>
-      </div>
-    </div>
-
-    <div class=" quiz-container-3 hidden">
-      <h3 class="title-answer">
-        <span>
-          3.
-        </span>
-        E pegação, ta rolando?
-      </h3>
-      <div class="quiz-wrap">
-        <button data-answer="answer-3" class="quiz-item" data-value="1">
-          Na cama!! Eu na minha e ele na dele :( Fazendo tudo sozinhx
-        </button>
-        <button data-answer="answer-3" class="quiz-item" data-value="2">
-          De 4, de 3, de ponta cabeça
-        </button>
-        <button data-answer="answer-3" class="quiz-item down" data-value="3">
-          Ainda bem que pelo celular não da pra ver que to curtindo :) :(
-        </button>
-        <button data-answer="answer-3" class="quiz-item down" data-value="4">
-          IN LOVE TOTAL &lt;3
-        </button>
-      </div>
-    </div>
-
-    <div class=" quiz-container-4 hidden">
-      <h3 class="title-answer">
-        <span>
-          4.
-        </span>
-        Que brinco A-R-R-A-S-O da Luisa no clipe né? Onde você compraria o seu?
-      </h3>
-      <div class="quiz-wrap">
-        <button data-answer="answer-4" class="quiz-item" data-value="1">
-          Tiffany, bebê! ;)
-        </button>
-        <button data-answer="answer-4" class="quiz-item" data-value="2">
-          Ziovara, Piuka, to na modaaa
-        </button>
-        <button data-answer="answer-4" class="quiz-item down" data-value="3">
-          Claramente o brinco daquela marca que minha amiga criou! :D
-        </button>
-        <button data-answer="answer-4" class="quiz-item down" data-value="4">
-          Pandora e Vivara: nunca erram!
-        </button>
-      </div>
-    </div>
-
-    <div class=" quiz-container-5 hidden">
-      <h3 class="title-answer">
-        <span>
-          5.
-        </span>
-        Hoje eu to…
-      </h3>
-      <div class="quiz-wrap">
-        <button data-answer="answer-5" class="quiz-item" data-value="1">
-          Acordo já com mensagem no celular… é minha tia mandando gif de bom dia no grupo da familia. #arrasada
-        </button>
-        <button data-answer="answer-5" class="quiz-item" data-value="2">
-          Amor próprio é tudo
-        </button>
-        <button data-answer="answer-5" class="quiz-item down" data-value="3">
-          Perai que to fazendo stories… será que ele vai ver? Não importa, mas tomara que elx veja.
-        </button>
-        <button data-answer="answer-5" class="quiz-item down" data-value="4">
-          Quarentena serviu pra dividir a conta do Netflix e Spotify com o crush &lt;3
-        </button>
-      </div>
-    </div>
-
-    <div class=" quiz-container-6 hidden">
-      <h3 class="title-answer">
-        <span>
-          6.
-        </span>
-        Vai ganhar um presente de um familiar, onde você orienta a comprar?
-      </h3>
-      <div class="quiz-wrap">
-        <button data-answer="answer-6" class="quiz-item" data-value="1">
-          Umas duas voltas em uma fast fashion o look ta pronto. Forever, C&A, Riachuelo
-        </button>
-        <button data-answer="answer-6" class="quiz-item" data-value="2">
-          Essas lojas da Farm são uma belezinhaa *-* opa, perai gostei daquele cropped tbm
-        </button>
-        <button data-answer="answer-6" class="quiz-item down" data-value="3">
-          A Amaro me representa total!! Inclusive, que representatividade &lt;3
-        </button>
-        <button data-answer="answer-6" class="quiz-item down" data-value="4">
-          Toda produzida na Victoria Secretsss, chego como uma angel. #diva
-        </button>
-      </div>
-    </div>
-    <!-- Form -->
-    <div class=" form-container hidden">
-      <div class="stripe-color">
-        <h1 class="answer-form-title">Quem é você na <br> música flores do Vitão?</h1>
-      </div>
-      <form class="lead-form" method="POST"
-        action="https://smtl.gama.academy/leads/bfeebc05-b7e1-11ea-8228-89cff86db9a0">
-        <div class="form-group">
-          <label for="name">Seu nome</label>
-          <input id="name" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo"
-            required />
-        </div>
-        <div class="form-group">
-          <label for="email">Seu e-mail</label>
-          <input id="email" name="email" type="email" title="Digite um email válido" required />
-        </div>
-
-        <input name="redirectTo" type="hidden" value="http://www.geracaoquizz.com/thank.html" />
-
-        <input type="submit" value="Gerar Personalidade" />
-
+        <input id="email" name="email" type="email" placeholder="Digite aqui o seu e-mail."
+          title="Digite um email válido" required />
+        <input id="name" name="name" type="hidden" value="usuariomodal" required />
+        <input type="submit" value="Enviar" />
+        <h6>Nós detestamos spam. Você pode cancelar sua assinatura a qualquer momento.</h6>
+        <input name="redirectTo" type="hidden" value="http://127.0.0.1:5500/quiz.html" />
       </form>
     </div>
   </div>
 
-  <script src="./js/app.js"></script>
+  <div id="wrap">
+    <figure>
+      <img class="logo-size" src="img/gama-logo-main-01.png" alt="Logo da Geração Quizz" title="Geração Quizz">
+    </figure>
+
+    <section class="quiz-container-1">
+      <h1 class="quiz-start-title">Quem é você na música flores do Vitão?</h1>
+      <div>
+
+      </div>
+
+      <div class="start-quiz">
+
+        <figure style="z-index: -9999;">
+          <img style="width: 100%; height: auto;" src="img/iniciarquiz.png" alt="imagem de fundo do iniciar quiz"
+            title="Vitão e Sonza background">
+        </figure>
+
+        <button type="button" id="btn-start">
+          Iniciar Quiz
+        </button>
+
+      </div>
+    </section>
+  </div>
+
+  <script type="text/javascript">
+    let open = false;
+
+    function toggleModal(close = true) {
+      const modal = document.querySelector('#retention-modal');
+
+      if (modal) {
+        modal.classList.toggle('hidden');
+      }
+
+      open = close;
+    }
+
+    window.onload = function () {
+      document.querySelector('#btn-start').addEventListener('click', () => {
+        window.location.href = "http://127.0.0.1:5500/quiz.html"
+      });
+
+      const overlay = document.querySelector('.modal-overlay');
+      const closeButton = document.querySelector('#close-button');
+
+      overlay.addEventListener('click', () => toggleModal(false));
+      closeButton.addEventListener('click', () => toggleModal(false));
+    }
+
+    window.addEventListener('mousemove', ({ clientY }) => {
+      if (clientY < 100 && !open) {
+        toggleModal()
+        open = true;
+      }
+    });
+
+    window.onkeydown = ({ which }) => {
+      if (which === 27 && open) {
+        toggleModal(false);
+      }
+    }
+  </script>
+
+
 </body>
 
 </html>
